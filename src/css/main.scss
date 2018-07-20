@@ -1,0 +1,95 @@
+// Function to convert px to rems
+@function remy($value, $base: 16px) {
+  @return ($value / $base) * 1rem;
+}
+
+// Variables
+$breakpoint-xlarge: 1200px;
+
+/* Base resets */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+}
+
+/* Extending Foundation grid */
+@media screen and (min-width: $breakpoint-xlarge) {
+  .xlarge-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%
+  }
+  .xlarge-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%
+  }
+  .xlarge-3 {
+    flex: 0 0 25%;
+    max-width: 25%
+  }
+  .xlarge-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%
+  }
+  .xlarge-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%
+  }
+  .xlarge-6 {
+    flex: 0 0 50%;
+    max-width: 50%
+  }
+  .xlarge-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%
+  }
+  .xlarge-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%
+  }
+  .xlarge-9 {
+    flex: 0 0 75%;
+    max-width: 75%
+  }
+  .xlarge-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%
+  }
+  .xlarge-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%
+  }
+  .xlarge-12 {
+    flex: 0 0 100%;
+    max-width: 100%
+  }
+}
+
+/* Override for Foundation reveal overlay */
+.reveal-overlay {
+  overflow: auto;
+}
+
+/* Override for Foundation reveal (modal) */
+.gallery-reveal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 1px;
+  height: auto;
+  border: 0;
+  box-shadow: 0 remy(2px) remy(4px) rgba(0, 0, 0, .5);
+  transform: translate(-50%, -50%);
+}
+
+/* Custom styles for author */
+.modal-author {
+  margin-bottom: remy(8px);
+  font-size: remy(16px);
+}
+
+.close-button {
+  transition: color .25s cubic-bezier(.4, 0, 1, 1);
+}
