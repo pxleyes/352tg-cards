@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation-flex.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -224,19 +225,22 @@
           <img src="images/Card 049.png" alt=" "/>
         </a>
       </div>
+    </div>
     <!-- .end Gallery wrapper -->
 
     <!-- Gallery overlay -->
     <div class="js-gallery-overlay gallery-overlay reveal-overlay">
       <!-- Gallery modal -->
       <div class="js-gallery-reveal gallery-reveal reveal" id="galleryModal" data-reveal data-overlay="true">
-        <h2 class="js-modal-author modal-author"></h2>
+        <div class="gallery-reveal-sizer">
+          <h2 class="js-modal-author modal-author"></h2>
 
-        <img class="js-modal-preview modal-preview" src="" alt="" />
+          <img class="js-modal-preview modal-preview" src="" alt="" />
 
-        <button class="js-close-button close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          <button class="js-close-button close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
       </div><!-- .end Gallery modal -->
     </div><!-- .end Gallery overlay -->
     <script id="__bs_script__">//<![CDATA[

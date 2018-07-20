@@ -65,11 +65,29 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 1px;
+  padding: 0;
+  width: 40%;
+  max-width: 480px;
   height: auto;
+  min-height: 0;
+  max-height: 94vh;
   border: 0;
+  border-radius: 1.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
   transform: translate(-50%, -50%); }
+  .gallery-reveal h2 {
+    display: none; }
+  .gallery-reveal img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block; }
+
+.gallery-reveal-sizer {
+  width: 100%;
+  padding-bottom: 125%; }
 
 /* Custom styles for author */
 .modal-author {
